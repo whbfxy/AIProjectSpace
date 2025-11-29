@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国传统宗教造像艺术科普</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>宗教造像艺术</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">首页</a></li>
+                    <li><a href="#buddhism" class="nav-link">佛教造像</a></li>
+                    <li><a href="#taoism" class="nav-link">道教造像</a></li>
+                    <li><a href="#temples" class="nav-link">寺庙道观</a></li>
+                    <li><a href="#analysis" class="nav-link">造像分析</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">中国传统宗教造像艺术</h2>
+                <p class="hero-subtitle">探索佛教与道教造像的千年演变历程</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('temples')">探索寺庙</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('analysis')">分析造像</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="buddhism" class="section">
+            <div class="container">
+                <h2 class="section-title">佛教造像艺术</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">汉代</div>
+                        <div class="timeline-content">
+                            <h3>佛教传入初期</h3>
+                            <p>佛教造像艺术随佛教传入中国，早期造像带有明显的犍陀罗风格，面相圆润，衣纹厚重。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">魏晋南北朝</div>
+                        <div class="timeline-content">
+                            <h3>本土化发展</h3>
+                            <p>造像艺术开始与中国传统艺术融合，出现了"秀骨清像"的风格，体现了文人士大夫的审美情趣。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">隋唐</div>
+                        <div class="timeline-content">
+                            <h3>鼎盛时期</h3>
+                            <p>唐代造像艺术达到巅峰，造像丰满圆润，神情庄严，体现了大唐盛世的恢弘气度。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">宋元明清</div>
+                        <div class="timeline-content">
+                            <h3>世俗化发展</h3>
+                            <p>造像艺术更加世俗化、人性化，注重情感表达，与民间信仰深度融合。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="taoism" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">道教造像艺术</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">魏晋</div>
+                        <div class="timeline-content">
+                            <h3>早期发展</h3>
+                            <p>道教造像艺术开始形成，早期造像多受佛教影响，但逐渐形成了独特的道教特色。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">唐代</div>
+                        <div class="timeline-content">
+                            <h3>体系完善</h3>
+                            <p>唐代道教得到皇室支持，造像艺术体系日趋完善，出现了大量神仙造像。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">宋元</div>
+                        <div class="timeline-content">
+                            <h3>民间化发展</h3>
+                            <p>道教造像更加民间化，出现了许多地方性的神仙造像，与民间信仰结合紧密。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">明清</div>
+                        <div class="timeline-content">
+                            <h3>集大成时期</h3>
+                            <p>道教造像艺术集大成，形成了完整的神仙体系，造像技法更加成熟。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="temples" class="section">
+            <div class="container">
+                <h2 class="section-title">知名寺庙道观</h2>
+                <div class="search-filters">
+                    <div class="filter-group">
+                        <label for="province">省份：</label>
+                        <select id="province">
+                            <option value="">全部省份</option>
+                            <option value="北京">北京</option>
+                            <option value="上海">上海</option>
+                            <option value="江苏">江苏</option>
+                            <option value="浙江">浙江</option>
+                            <option value="四川">四川</option>
+                            <option value="山西">山西</option>
+                            <option value="河南">河南</option>
+                            <option value="陕西">陕西</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="city">城市：</label>
+                        <select id="city">
+                            <option value="">全部城市</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="temple-type">类型：</label>
+                        <select id="temple-type">
+                            <option value="">全部</option>
+                            <option value="buddhism">佛教寺庙</option>
+                            <option value="taoism">道教宫观</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary" onclick="filterTemples()">搜索</button>
+                </div>
+                <div class="temple-grid" id="temple-grid">
+                    <!-- 寺庙卡片将通过JavaScript动态生成 -->
+                </div>
+            </div>
+        </section>
+
+        <section id="analysis" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">造像分析</h2>
+                <div class="analysis-container">
+                    <div class="upload-section">
+                        <h3>上传神像图片进行分析</h3>
+                        <div class="upload-area" id="upload-area">
+                            <div class="upload-content">
+                                <div class="upload-icon">📤</div>
+                                <p>点击或拖拽图片到此处上传</p>
+                                <p class="upload-hint">支持 JPG、PNG 格式，最大 10MB</p>
+                            </div>
+                            <input type="file" id="file-input" accept="image/*" style="display: none;">
+                        </div>
+                        <div class="analysis-result" id="analysis-result" style="display: none;">
+                            <h3>分析结果</h3>
+                            <div class="result-content">
+                                <div class="result-image">
+                                    <img id="uploaded-image" src="" alt="上传的神像">
+                                </div>
+                                <div class="result-details">
+                                    <div class="detail-item">
+                                        <h4>神祇识别</h4>
+                                        <p id="deity-name">--</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>造像风格</h4>
+                                        <p id="style-analysis">--</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>年代特征</h4>
+                                        <p id="period-analysis">--</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>地域特征</h4>
+                                        <p id="region-analysis">--</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>艺术特点</h4>
+                                        <p id="art-features">--</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 中国传统宗教造像艺术科普网站. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
