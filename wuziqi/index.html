@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五子棋游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>五子棋游戏</h1>
+            <div class="game-info">
+                <div class="current-player">
+                    当前玩家: <span id="current-player">黑棋</span>
+                </div>
+                <div class="game-status" id="game-status">游戏进行中</div>
+            </div>
+            <div class="game-mode">
+                <label>游戏模式:</label>
+                <div class="mode-buttons">
+                    <button id="pvp-mode" class="mode-btn active">双人对战</button>
+                    <button id="pve-mode" class="mode-btn">人机对战</button>
+                </div>
+            </div>
+            
+            <div class="difficulty-section" id="difficulty-section" style="display: none;">
+                <label>机器人难度:</label>
+                <select id="difficulty-select">
+                    <option value="easy">简单</option>
+                    <option value="medium" selected>中等</option>
+                    <option value="hard">困难</option>
+                </select>
+            </div>
+            
+            <div class="controls">
+                <button id="restart-btn">重新开始</button>
+                <button id="undo-btn">悔棋</button>
+            </div>
+        </header>
+        
+        <main>
+            <div class="board-container">
+                <canvas id="game-board" width="600" height="600"></canvas>
+            </div>
+        </main>
+        
+        <footer>
+            <p>使用鼠标点击棋盘下棋，先连成五子者获胜</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
